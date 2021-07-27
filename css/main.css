@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "sans-serif", serif ,cursive;
+}
+/******************** header********************/
+.header{
+    width: 100%;
+    min-height: 100vh;
+   background: url(../images/gym.jpg) center/cover
+             no-repeat fixed;
+}
+.nav-bar{
+    width: 100%;
+    height: 100px;
+    font-size: 20px;
+}
+.nav-bar img{
+    margin-top: -12px;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+}
+
+.catagary {
+    margin-top: -95px;
+    margin-left: 60%;
+    font-size: 20px;
+    padding: 40px;
+    position: fixed;
+    z-index: 1;
+}
+
+.catagary a{
+    color: orange;
+    text-decoration: none;
+    margin: 6px;
+}
+
+.catagary a:hover{
+    padding: 5px;
+    background: white;
+    border-radius: 20px;
+}
+
+.p-text{
+    color: white;
+}
+.home-text{
+    color: orange;
+    font-size: 40px;
+    margin-left: 50px;
+    margin-top: 250px;
+}
+
+.menu{
+    text-align: right;
+    height: 70px;
+    line-height: 40px;
+   
+}
+.open{
+    margin: 0 40px 0 0;
+    margin-top: -70px;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    color: orange;
+}
+
+#toggle{
+    display: none;
+}
+/******************** endheader********************/
+/******************** courses********************/
+.courses{
+    width: 100%;
+    height: 350px;
+    margin: 50px 0;
+}
+.text{
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: bisque;
+    display: block;
+}
+.weight{
+    width: 32%;
+    height: 250px;
+    background-color: orange;
+    margin-left: 15px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+}
+.weight img{
+    width: 155px;
+    display: block;
+    margin: auto;
+}
+.weight span{
+    font-size: 30px;
+    display: block;
+    font-weight: bold; 
+}
+.weight p{
+    font-size: 23px;
+    color: white;
+}
+
+.run{
+    width: 32%;
+    height: 250px;
+    background-color: orange;
+    margin-left: 15px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+}
+.run img{
+    width: 75px;
+    display: block;
+    padding-top: 10px;
+    margin: auto;
+}
+.run span{
+  
+    font-size: 30px;
+    font-weight: bold;
+}
+.run p{
+    font-size: 23px;
+    color: white;
+}
+/******************** endcourses********************/
+/******************** trainer********************/
+ .trainer{
+    width: 100%;
+    height: 350px;
+}
+.trainer1{
+    width: 32%;
+    height: 260px;
+    margin-top: 10px;
+    margin-left: 15px;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+}
+.trainer1 img{
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+.trainer1 span{
+    font-size: 25px;
+    font-weight: bold;
+}
+.details{
+    background-color: lightgray;
+    margin-top: 2px;
+    border-radius: 10px;
+    height: 120px;
+}
+/******************** endtrainer********************/
+/******************** gallary********************/
+.gallary{
+    width: 100%;
+    background: fixed;
+    margin-top:50px; 
+    height: 500px;
+}
+.gallary-item{
+    height: 260px;
+    background: fixed;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+.gallary-item img{
+    display: inline-block;
+    width: 300px;
+    padding: 5px;
+}  
+/******************** endgallary********************/
+/******************** contact********************/
+ .contact{
+    width: 100%;
+    height: 300px;
+    background: fixed;
+    background-color: white;
+}
+.contact h1{
+    padding: 5px;
+    text-align: center;
+    color: orange;
+}
+.form{
+    background-color: whitesmoke;
+    width: 50%;
+    margin: auto;
+    height: 290px;
+    border-radius: 20px;
+}
+.form input{
+    margin: auto;
+    color: orange;
+    display: block;
+    margin-top: 20px;
+    border: none;
+    border-bottom: 3px solid black;
+    border-radius: 0;
+    font-size: 20px;
+    width: 350px;
+    padding: 10px;
+    padding-left: 20px;
+}
+#submit{
+    color: white;
+    background: black;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 300px;
+    border: none;
+    font-size: 17px;
+    width: 100px;
+    padding: 10px;
+}  
+/******************** endcontact********************/
+@media screen and (max-width:776px){
+    .home-text{
+        color: orange;
+        font-size: 40px;
+        margin-left: 50px;
+        margin-top: 450px;
+    }
+    .nav-bar img{
+        position:unset;
+    }
+    .open{
+        display: block;
+        margin-left: 85%;
+    }
+    .close{
+        font-size: 2rem;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .catagary{
+        text-align: center;
+        width: 60%;
+        margin-left: 60px;
+        display: none;
+    }
+    .catagary a{
+        display: block;
+        margin: 10px;
+        margin-left: 90px;
+        background-color: white; 
+        border-radius: 15px;
+        text-align: center;
+        width: 50%;
+    }
+    #toggle:checked + .catagary{
+        display: block;
+    }
+    .courses{
+        width: 100%;
+        height: 700px;
+        background: fixed;
+    }
+    .text{
+        margin: 5px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        background-color: bisque;
+    }
+    .weight{
+        width: 80%;
+        height: 250px;
+        background: fixed;
+        background-color: orange;
+        margin-left: 40px;
+        margin-top: -15px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .weight img{
+        width: 150px;
+        display: block;
+        margin: auto;
+    }
+    .weight span{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .weight p{
+        font-size: 23px;
+        color: white;
+    }
+    
+    .run{
+        width: 80%;
+        height: 230px;
+        background: fixed;
+        background-color: orange;
+        margin-left: 40px;
+        margin-top: 10px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .run img{
+        width: 50px;
+        display: block;
+        padding-top: 10px;
+        margin: auto;
+    }
+    .run span{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .run p{
+        font-size: 23px;
+        color: white;
+    }
+    .trainer{
+        width: 100%;
+        height: 870px;
+        background: fixed;
+    }
+    .trainer1{
+        width: 80%;
+        margin: auto;
+        height: 260px;
+        background: fixed;
+        margin-left: 40px;
+        margin-top: 10px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .trainer1 img{
+        width: 150px;
+        display: block;
+        margin: auto;
+    }
+    .trainer1 span{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .details{
+        background-color: lightgray;
+        margin-top: 2px;
+        border-radius: 10px;
+    }
+    .gallary{
+        width: 100%;
+        background: fixed;
+        margin-top:50px ;
+        height: 215vh;
+
+    }
+    .gallary-item{
+        width: 80%;
+        margin: auto;
+        height: 260px;
+        background: fixed;
+        margin-top: 10px;
+    }
+    .gallary-item img{
+        display: block;
+        width: 300px;
+        padding: 5px;
+    }
+    .contact{
+        width: 100%;
+        height: 260px;
+        background: fixed;
+        background-color: white;
+        margin-top: -8px;
+    }
+    .contact h1{
+        padding: 5px;
+        text-align: center;
+        color: orange;
+    }
+    .form{
+        width: 80%;
+        height: 280px;
+        margin: auto;
+    }
+    .form input{
+        color: orange;
+        display: block;
+        margin: 20px;
+        border: none;
+        border-bottom: 3px solid black;
+        border-radius: 0;
+        font-size: 17px;
+        width: 230px;
+        padding: 10px;
+        padding-left: 20px;
+    }
+    #submit{
+        color: white;
+        background: black;
+        display: block;
+        margin-left: 90px;
+        border: none;
+        font-size: 17px;
+        width: 100px;
+        padding: 10px;
+    }
+}
+
+
